@@ -1,16 +1,16 @@
-.other-navbar {
+.home-navbar {
   width: 100%;
   height: 773px;
   display: flex;
   background: url("/public/img/banner.webp");
   background-size: cover;
 }
-.other-navbar .navbar-container {
+.home-navbar .navbar-container {
   margin-top: 55px;
   height: 642px;
 }
 
-.other-navbar .navbar-container .menu {
+.home-navbar .navbar-container .menu {
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -18,12 +18,12 @@
   align-items: center;
 }
 
-.other-navbar .navbar-container .menu .brand-logo {
+.home-navbar .navbar-container .menu .brand-logo {
   width: 125px;
   height: 30px;
 }
 
-.other-navbar .navbar-container .menu .links {
+.home-navbar .navbar-container .menu .links {
   min-width: 700px;
   display: flex;
   flex-direction: row;
@@ -31,33 +31,33 @@
   align-items: center;
 }
 
-.other-navbar .navbar-container .menu .links .login-button {
+.home-navbar .navbar-container .menu .links .login-button {
   background: #3776cc;
   color: #f8f8ff;
 }
 
-.other-navbar .navbar-container .menu .user-avatar {
+.home-navbar .navbar-container .menu .user-avatar {
   width: 50px;
   height: 50px;
   border-radius: 24px;
 }
 
-.other-navbar a {
+.home-navbar a {
   text-decoration: none;
 }
 
-.other-navbar .hover-line a {
+.home-navbar .hover-line a {
   color: #f8f8ff;
   z-index: 100;
 }
 
-.other-navbar .underline {
+.home-navbar .underline {
   display: block;
   content: "";
   border-bottom: solid 2px #d7b686;
 }
 
-.other-navbar .hover-line::after {
+.home-navbar .hover-line::after {
   display: block;
   content: "";
   border-bottom: solid 2px #d7b686;
@@ -65,15 +65,15 @@
   transition: transform 250ms ease-in-out;
 }
 
-.other-navbar .hover-line:hover:after {
+.home-navbar .hover-line:hover:after {
   transform: scaleX(1);
 }
 
-.other-navbar div.hover-line:after {
+.home-navbar div.hover-line:after {
   transform-origin: 0% 50%;
 }
 
-.other-navbar .navbar-container .header-frame {
+.home-navbar .navbar-container .header-frame {
   margin-top: 142px;
   height: 462px;
   display: flex;
@@ -81,13 +81,13 @@
   justify-content: space-between;
 }
 
-.other-navbar .navbar-container .header-frame .detail {
+.home-navbar .navbar-container .header-frame .detail {
   width: 510px;
   display: flex;
   flex-direction: column;
 }
 
-.other-navbar .navbar-container .header-frame .detail .head-main-txt {
+.home-navbar .navbar-container .header-frame .detail .head-main-txt {
   width: 450px;
   height: 150px;
   font-family: "Roboto Serif";
@@ -99,7 +99,7 @@
   color: #f8f8ff;
 }
 
-.other-navbar .navbar-container .header-frame .detail .wel-txt {
+.home-navbar .navbar-container .header-frame .detail .wel-txt {
   width: 510px;
   height: 42px;
   font-family: "Roboto Serif";
@@ -111,7 +111,7 @@
   color: #d7b686;
 }
 
-.other-navbar .navbar-container .header-frame .detail .srvice-txt {
+.home-navbar .navbar-container .header-frame .detail .srvice-txt {
   margin-top: 23px;
   width: 153px;
   height: 23px;
@@ -124,11 +124,11 @@
   color: #d5d5d5;
 }
 
-.other-navbar .navbar-container .detail .signup {
+.home-navbar .navbar-container .detail .signup {
   margin-top: 73px;
 }
 
-.other-navbar .navbar-container .detail .signup .signup-button {
+.home-navbar .navbar-container .detail .signup .signup-button {
   width: 210px;
   height: 60px;
   border-radius: 4px;
@@ -142,93 +142,19 @@
   color: #f8f8ff;
 }
 
-.other-navbar .navbar-container .logo-frame {
+.home-navbar .navbar-container .logo-frame {
   margin-top: 43px;
   width: 690px;
   height: 419px;
 }
 
-.other-navbar .navbar-container .logo-frame .logo-img {
+.home-navbar .navbar-container .logo-frame .logo-img {
   width: 100%;
   height: 100%;
   background: url("/public/img/logo.webp");
   background-size: contain;
   background-repeat: no-repeat;
   filter: invert(25%);
-}
-/* other nav */
-.other-navbar {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  background: url("/public/img/banner.webp");
-  background-size: cover;
-}
-.other-navbar .navbar-container {
-  margin-top: 55px;
-}
-
-.other-navbar .navbar-container .menu {
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.other-navbar .navbar-container .menu .brand-logo {
-  width: 125px;
-  height: 30px;
-}
-
-.other-navbar .navbar-container .menu .links {
-  min-width: 700px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.other-navbar .navbar-container .menu .links .login-button {
-  background: #3776cc;
-  color: #f8f8ff;
-}
-
-.other-navbar .navbar-container .menu .user-avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 24px;
-}
-
-.other-navbar a {
-  text-decoration: none;
-}
-
-.other-navbar .hover-line a {
-  color: #f8f8ff;
-  z-index: 100;
-}
-
-.other-navbar .underline {
-  display: block;
-  content: "";
-  border-bottom: solid 2px #d7b686;
-}
-
-.other-navbar .hover-line::after {
-  display: block;
-  content: "";
-  border-bottom: solid 2px #d7b686;
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-}
-
-.other-navbar .hover-line:hover:after {
-  transform: scaleX(1);
-}
-
-.other-navbar div.hover-line:after {
-  transform-origin: 0% 50%;
 }
 /* BASKET */
 
@@ -363,4 +289,78 @@
   height: 260px;
   display: flex;
   flex-direction: column;
+}
+/* other nav */
+.other-navbar {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  background: url("/public/img/banner.webp");
+  background-size: cover;
+}
+.other-navbar .navbar-container {
+  margin-top: 55px;
+}
+
+.other-navbar .navbar-container .menu {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other-navbar .navbar-container .menu .brand-logo {
+  width: 125px;
+  height: 30px;
+}
+
+.other-navbar .navbar-container .menu .links {
+  min-width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other-navbar .navbar-container .menu .links .login-button {
+  background: #3776cc;
+  color: #f8f8ff;
+}
+
+.other-navbar .navbar-container .menu .user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 24px;
+}
+
+.other-navbar a {
+  text-decoration: none;
+}
+
+.other-navbar .hover-line a {
+  color: #f8f8ff;
+  z-index: 100;
+}
+
+.other-navbar .underline {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #d7b686;
+}
+
+.other-navbar .hover-line::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #d7b686;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.other-navbar .hover-line:hover:after {
+  transform: scaleX(1);
+}
+
+.other-navbar div.hover-line:after {
+  transform-origin: 0% 50%;
 }
