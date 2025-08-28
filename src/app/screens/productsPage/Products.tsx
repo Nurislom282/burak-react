@@ -102,6 +102,7 @@ export default function Products() {
             <Box className={"title-txt"}>Burak Restaurant</Box>
             <Stack direction="row" className="search-container">
               <input
+                type="search"
                 placeholder="Type here"
                 className="search-input"
                 value={searchText}

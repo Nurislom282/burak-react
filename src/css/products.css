@@ -51,7 +51,6 @@
 
 .products .avatar-big-box .search-container .search-button {
   height: 35px;
-  margin-left: -88px;
   background: #343434;
   padding: 0 16px;
   border: none;
@@ -483,7 +482,7 @@
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 15px;
   align-items: center;
 }
 
