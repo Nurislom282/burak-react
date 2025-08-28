@@ -14,6 +14,29 @@ import Badge from "@mui/material/Badge";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
+/** REDUX **/
+import { useDispatch } from "react-redux";
+import { Dispatch } from "@reduxjs/toolkit";
+import { createSelector } from "reselect";
+import { useSelector } from "react-redux";
+import { retriveProducts } from "./selector";
+/** MANTIQLAR **/
+import { setRestaurant, setChosenProduct, setProducts } from "./slice";
+import ProductService from "../../services/ProductService";
+import { ProductCollection } from "../../../lib/enums/product.enum";
+import MemberService from "../../services/MemberService";
+import { error } from "console";
+import { Member } from "../../../lib/types/member";
+import { Product } from "../../../lib/types/product";
+
+/** REDUX SLICE & SELECTOR **/
+const actionDispatch = (dispatch: Dispatch) => ({
+  setProducts: (data: Product[]) => dispatch(setProducts(data)),
+});
+const ProductsRetriver = createSelector(retriveProducts, (products) => ({
+  products,
+}));
+
 const products = [
   { productName: "Cutlet", imagePath: "/img/cutlet.webp", size: "Large Size" },
   {
