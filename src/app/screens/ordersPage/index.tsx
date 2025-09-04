@@ -20,6 +20,8 @@ import { Order, OrderIquery } from "../../../lib/types/order";
 import { OrderStatus } from "../../../lib/enums/order.enum";
 import OrderService from "../../services/OrderService";
 import { useGlobals } from "../../hooks/useGlobals";
+import { useHistory } from "react-router-dom";
+import { memberType } from "../../../lib/enums/member.enum";
 
 /** REDUX SLICE & SELECTOR **/
 const actionDispatch = (dispatch: Dispatch) => ({
@@ -33,6 +35,8 @@ export default function OrdersPage() {
     actionDispatch(useDispatch());
   const { orderBuilder } = useGlobals();
   const [value, setValue] = useState("1");
+  const history = useHistory();
+  const { authMember } = useGlobals();
 
   const [orderInquiry, setOrderInquiry] = useState<OrderIquery>({
     page: 1,
@@ -63,6 +67,8 @@ export default function OrdersPage() {
   const handleChange = (e: SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
+
+  if (!authMember) history.push("/");
   return (
     <div className="order-page">
       <Container className="order-container">
@@ -110,8 +116,19 @@ export default function OrdersPage() {
             <Divider height="1" width="300" bg="black" />
 
             <Stack className="user-detail-bottom">
-              <img className="user-location-img" src="/img/location.png" />
-              <p className="user-location-p">Seville, Russia</p>
+              <img
+                className="user-location-img"
+                src={
+                  authMember?.memberType === memberType.RESTAURANT
+                    ? "/icons/restaurant.svg"
+                    : "/icons/user-badge.svg"
+                }
+              />
+              <p className="user-location-p">
+                {authMember?.memberAdress
+                  ? authMember.memberAdress
+                  : "Do not exist"}
+              </p>
             </Stack>
           </Stack>
 
