@@ -107,6 +107,7 @@ export default function OtherNavbar(props: OtherNavbarProps) {
                 onClick={handleLogoutClick}
               />
             )}
+
             <Menu
               anchorEl={anchorEl}
               id="account-menu"

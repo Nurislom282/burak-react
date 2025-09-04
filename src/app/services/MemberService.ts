@@ -1,4 +1,3 @@
-import { Logout } from "@mui/icons-material";
 import axios from "axios";
 import { serverApi } from "../../lib/config";
 import { LoginInput, Member, MemberInput } from "../../lib/types/member";
@@ -79,7 +78,7 @@ class MemberService {
 
       localStorage.removeItem("memberData");
     } catch (err) {
-      console.log("Error, login:", err);
+      console.log("Error, logout:", err);
       throw err;
     }
   }
